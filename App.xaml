@@ -1,0 +1,39 @@
+﻿<Application x:Class="Lab4_EF_Starter.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Lab4_EF_Starter"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Window">
+            <Setter Property="Background" Value="LightBlue"></Setter>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="AppHeaderStyle">
+            <Setter Property="Background" Value="LightBlue"></Setter>
+            <Setter Property="FontSize" Value="50"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="FontFamily" Value="Rockwell Nova"></Setter>
+            <Setter Property="TextAlignment" Value="Right"></Setter>
+            <Setter Property="Margin" Value="5,0"></Setter>
+        </Style>
+        <Style TargetType="TabControl">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Margin" Value="5,0"></Setter>
+        </Style>
+        <Style TargetType="TabItem">
+            <Setter Property="FontSize" Value="24"></Setter>
+            <Setter Property="FontFamily" Value="Rockwell Nova"></Setter>
+            <Setter Property="Background" Value="LightGray"></Setter>
+            <Setter Property="Opacity" Value="0.5"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="FontWeight" Value="Bold"></Setter>
+                    <Setter Property="Background" Value="LightBlue"></Setter>
+                    <Setter Property="Foreground" Value="DarkOrange"></Setter>
+                    <Setter Property="Opacity" Value="1.0"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Application.Resources>
+</Application>
+
+    
